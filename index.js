@@ -2,16 +2,19 @@ let firstCard = Math.floor(Math.random() * 10) + 2; // write unit test
 let secondCard = Math.floor(Math.random() * 10) + 2;
 let hasBlackJack = false
 let isAlive = true
+let message = ""
 
 let sum = firstCard + secondCard;
 console.log(sum)
 
 if (sum < 21) {
-    console.log("Wanna draw a new card?")
+    message = "Do you want to draw a card"
 } else if (sum === 21) {
-    console.log("You won!")
+    message = "Blackjack! You won!"
     hasBlackJack = true
 } else {
-    console.log("You lost!")
+    message = "You're out of the game!"
     isAlive = false
 }
+
+console.log(message)

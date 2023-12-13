@@ -1,0 +1,15 @@
+@keyframes slide {
+    0% {
+        right: 25%;
+    }
+    50% {
+        left: 25%;
+    }
+    100% {
+        right: 25%;
+    }
+}
+
+.animate-slide {
+    animation: slide 5s infinite alternate;
+}

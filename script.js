@@ -2,10 +2,11 @@ let firstCard = Math.floor(Math.random() * 10) + 2;
 let secondCard = Math.floor(Math.random() * 10) + 2;
 let hasBlackJack = false;
 let isAlive = true;
+
 let message = document.getElementById("message");
 
-let sum = firstCard + secondCard;
-console.log(sum);
+sum = firstCard + secondCard
+let sumEl = document.getElementById("sum");
 
 function startGame() {
   if (sum < 21) {
@@ -17,6 +18,7 @@ function startGame() {
     message.textContent = "You're out of the game!";
     isAlive = false;
   }
+  sumEl.textContent = firstCard + secondCard;
 
   
 }

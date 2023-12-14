@@ -5,7 +5,7 @@ let isAlive = true;
 let message = "";
 let messageEl = document.getElementById("message");
 
-let sum = firstCard + secondCard;
+let sum = firstCard + secondCard + 10;
 console.log(sum);
 
 function startGame() {

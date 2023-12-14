@@ -4,6 +4,11 @@ body {
   height: 100%;
 }
 
+#message {
+  width: 50%;
+}
+
+
 @keyframes slide {
     0% {
         right: 50%;

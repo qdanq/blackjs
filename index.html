@@ -6,22 +6,24 @@
     <title>Title</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="styles.css">
-    <script src="script.js"></script>
 
 </head>
 <body>
-    <img class="left-[38%] top-[122px] absolute" src="images/cards.png"/>
-    <div class="left-[30%] top-[65px] text-yellow-400 text-9xl font-bold font-['Inter'] animate-slide absolute">Blackjack</div>
-    <div class="mix-blend-luminosity h-[116px] left-[25%] top-[851px] absolute">
+    <img class="left-[38%] top-[10%] absolute" src="images/cards.png"/>
+    <div class="left-[30%] text-yellow-400 text-9xl font-bold font-['Inter'] absolute">Blackjack</div>
+    <div id="message" class="text-green-500 text-4xl font-bold font-['Inter'] top-[179px] left-[50%] absolute animate-slide"></div>
+    <div class="mix-blend-luminosity h-[116px] left-[25%] top-[84%] absolute">
     <div class="w-[950px] h-[116px] bg-lime-900 rounded-[15px] border border-black"></div>
         <button onclick="startGame()">
-          <div class="left-[9px] top-0 absolute whitespace-nowrap mix-blend-lighten text-white text-8xl font-semibold font-['Inter'] tracking-[14.40px]">START GAME</div>
+          <div class="left-[9px] top-[0%]  absolute whitespace-nowrap mix-blend-lighten text-white text-8xl font-semibold font-['Inter'] tracking-[14.40px]">START GAME</div>
         </button>
     </div>
     <div class="text-white text-7xl font-normal font-['Inter] left-[25%] top-[621px] absolute">
       Cards:
     </div>
-    <div class="left-[10px] top-[45px] absolute text-white text-[64px] font-normal font-['Inter'] tracking-[9.60px]">Sum:</div>
-</div>
+    <div class="left-[10px] top-[30px] absolute text-white text-[64px] font-medium font-['Inter'] tracking-[9.60px]">Sum:</div>
+<div id="sum" class="left-[205px] top-[30px] absolute text-white text-[64px] font-medium font-['Inter']"></div>
+    <script src="script.js"></script>
 </body>
+
 </html>

@@ -6,6 +6,7 @@ let message = ""
 
 let sum = firstCard + secondCard;
 console.log(sum)
+
 function startGame() {
   if (sum < 21) {
     message = "Do you want to draw a card"

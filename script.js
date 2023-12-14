@@ -3,7 +3,7 @@ function startGame() {
   let secondCard = Math.floor(Math.random() * 10) + 2;
   let hasBlackJack = false;
   let isAlive = true;
-  sum = firstCard + secondCard; 
+  sum = firstCard + secondCard 
 
   let message = document.getElementById("message");
   let sumEl = document.getElementById("sum");
@@ -21,5 +21,8 @@ function startGame() {
   sumEl.textContent = firstCard + secondCard;
   cards.textContent = [firstCard, secondCard];
 
+}
+
+function newCard() {
   
 }

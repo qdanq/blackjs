@@ -6,16 +6,16 @@ body {
 
 @keyframes slide {
     0% {
-        right: 25%;
+        right: 50%;
     }
     50% {
-        left: 25%;
+        left: 29%;
     }
     100% {
-        right: 25%;
+        right: 50%;
     }
 }
 
 .animate-slide {
-    animation: slide 5s infinite alternate;
+    animation: slide 4s infinite alternate;
 }

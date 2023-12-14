@@ -6,8 +6,8 @@ let message = ""
 
 let sum = firstCard + secondCard;
 console.log(sum)
-
-if (sum < 21) {
+function startGame() {
+  if (sum < 21) {
     message = "Do you want to draw a card"
 } else if (sum === 21) {
     message = "Blackjack! You won!"
@@ -16,5 +16,6 @@ if (sum < 21) {
     message = "You're out of the game!"
     isAlive = false
 }
-
 console.log(message)
+
+}
